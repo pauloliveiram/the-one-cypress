@@ -15,6 +15,10 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       pluginsFile: "cypress/plugins/index.js"
     },
+    setupNodeEvents(on, config) {
+      allureWriter(on, config);
+      return config;
+    },
   },
   video: false,
   
