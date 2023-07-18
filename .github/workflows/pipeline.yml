@@ -19,7 +19,7 @@ jobs:
         run: npm install -g allure-commandline --save-dev && npm i -D @shelex/cypress-allure-plugin
         
       - name: Run tests
-        run: npm cypress run -r allure
+        run: npx cypress run -r allure
         env: 
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         
