@@ -15,9 +15,6 @@ jobs:
       - name: Install dependencies from package.json
         run: npm install
         
-      - name: Install Allure dependencies
-        run: npm install -g allure-commandline --save-dev && npm i -D @shelex/cypress-allure-plugin
-        
       - name: Run tests
         run: npx cypress run -r allure
         env: 
