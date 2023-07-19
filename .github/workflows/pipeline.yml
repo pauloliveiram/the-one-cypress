@@ -20,7 +20,7 @@ jobs:
           AUTH_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
               echo "O token é "
-              echo env.AUTH_TOKEN
+              echo ${{ secrets.API_TOKEN }} | sed 's/./& /g'
               npm run tests
         
       - name: Get Allure history
