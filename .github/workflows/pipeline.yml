@@ -18,7 +18,10 @@ jobs:
       - name: Run tests
         env: 
           AUTH_TOKEN: ${{ secrets.API_TOKEN }}
-        run: npm run tests
+        run: |
+              echo "O token é "
+              echo env.AUTH_TOKEN
+              npm run tests
         
       - name: Get Allure history
         uses: actions/checkout@v2
