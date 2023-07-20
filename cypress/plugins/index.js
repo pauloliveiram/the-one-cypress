@@ -1,10 +1,10 @@
-const dotenvPlugin = require('dotenv-webpack');
+const dotenvPlugin = require("dotenv-webpack");
 
 module.exports = (on, config) => {
   const options = {
     webpackOptions: {
       resolve: {
-        extensions: ['.ts', '.js'],
+        extensions: [".ts", ".js"],
       },
     },
     watchOptions: {},
