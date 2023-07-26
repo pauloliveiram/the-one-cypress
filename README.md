@@ -40,7 +40,7 @@ https://the-one-api.dev/
 
 - Node instalado na máquina
 - Java 8 instalado na máquina (Necessário para executar o binário allure)
-- Após o clonar o repositório, é necessário gerar um token de autenticação no site da API e inserí-lo na variável vazia "AUTH_TOKEN" no arquivo "cypress.env.json"
+- Após clonar o repositório, é necessário gerar um token de autenticação no site da API e inserí-lo na variável vazia "AUTH_TOKEN" no arquivo "cypress.env.json"
 
 ```bash
 
