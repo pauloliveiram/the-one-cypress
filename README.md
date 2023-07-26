@@ -60,8 +60,22 @@ npm run tests
 npm run allure-report
 								
 # Caso queira executar os testes e gerar os relatórios novamente, antes é necessário limpar a pasta allure-results com o seguinte comando:
-npm run clean:folders						
-```			
+npm run clean:folders					
+```
+
+ ### ESLint e Prettier
+No projeto foram utilizadas as ferramentas ESLint e Prettier para garantir uma melhor qualidade do código desenvolvido. 
+- **ESLint:** é responsável por analisar o código e identificar problemas de acordo com regras pré-estabelecidas
+- **Prettier:** é responsável por formatar o código de acordo com regras pré-estabelecidas
+
+```bash
+
+# Executar o ESLint
+npx eslint .
+
+# Executar o Prettier
+npx prettier . --write
+```
 
 # Autor
 
